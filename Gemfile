@@ -18,12 +18,12 @@ gem "figaro", "~> 1.1.0"
 
 
 group :production do
-    gem 'pg'
+    gem 'sqlite3',      '1.3.13'
     gem 'rails_12factor'
 end
 
 group :development, :test do
-    gem 'sqlite3',      '1.3.13'
+    gem 'pg'
 end
 
 group :development, :test do
